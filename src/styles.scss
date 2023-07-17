@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 100px;
+
+  &--slim {
+    height: 50px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

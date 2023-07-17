@@ -1,0 +1,87 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  &__context {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+    overflow-y: auto;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.question {
+  font-size: 25px;
+  text-align: center;
+}
+
+.start {
+  background-color: #b3e5fc;
+  color: black;
+}
+
+.yes {
+  background-color: #56fb64;
+  color: black;
+}
+
+.no {
+  background-color: #fb5656;
+  color: black;
+}
+
+.speak {
+  background-color: white;
+  color: black;
+}
+
+.idk {
+  background-color: #ffed4f;
+  color: black;
+}
+
+.context {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.role {
+  font-weight: bold;
+  margin-right: 10px;
+
+  &--system {
+    color: yellow;
+  }
+
+  &--user {
+    color: green;
+  }
+
+  &--assistant {
+    color: pink;
+  }
+}
